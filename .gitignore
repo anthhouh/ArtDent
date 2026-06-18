@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# otros proyectos en la carpeta (no forman parte de esta app)
+smile-luxury-clinic-f18/

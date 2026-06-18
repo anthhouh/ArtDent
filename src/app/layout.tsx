@@ -12,7 +12,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "ArtDent | Clínica de Ortodoncia Premium – Transformamos Sonrisas",
+  title: "ArtDent | Clínica de OrtodonciaS – Transformamos Sonrisas",
   description:
     "Especialistas en ortodoncia invisible, brackets estéticos, metálicos y más. Agenda tu cita hoy.",
   keywords:

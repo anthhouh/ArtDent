@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  allowedDevOrigins: ["192.168.56.1", "localhost"],
+  images: {
+    // Permite optimización de imágenes locales (public/)
+    // Si usas imágenes externas en el futuro, agrégalas aquí en remotePatterns
+  },
 };
 
 export default nextConfig;

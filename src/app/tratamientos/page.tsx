@@ -9,6 +9,7 @@ const treatments = [
     title: "Brackets Metálicos Autoligado",
     desc: "La opción más resistente, efectiva y económica. Ahora más pequeños y cómodos que nunca.",
     icon: "",
+    image: "/images/tratamientos/metalicos-autoligado.jpg",
     details: "Recomendados para casos complejos y para niños/adolescentes. Permiten personalizar el color de las ligas.",
     time: "12 - 24 meses",
   },
@@ -16,6 +17,7 @@ const treatments = [
     title: "Brackets Metálicos Convencionales",
     desc: "La opción más resistente, efectiva y económica. Ahora más pequeños y cómodos que nunca.",
     icon: "",
+    image: "/images/tratamientos/metalicos-convencionales.jpg",
     details: "Recomendados para casos complejos y para niños/adolescentes. Permiten personalizar el color de las ligas.",
     time: "12 - 24 meses",
   },
@@ -23,6 +25,7 @@ const treatments = [
     title: "Brackets Estéticos",
     desc: "La eficacia de los brackets tradicionales con una apariencia discreta que se camufla con el color natural de tu diente.",
     icon: "",
+    image: "/images/tratamientos/esteticos.jpg",
     details: "No se manchan. Excelente opción para quienes buscan estética sin el costo de los alineadores.",
     time: "12 - 24 meses",
   },
@@ -30,6 +33,7 @@ const treatments = [
     title: "Ortodoncia Invisible (Alineadores)",
     desc: "Alineadores transparentes removibles, diseñados digitalmente para mover tus dientes con precisión sin que nadie lo note.",
     icon: "",
+    image: "/images/tratamientos/alineadores.jpg",
     details: "Ideal para adultos y adolescentes. Se cambian cada 1-2 semanas. Permiten comer y cepillarse sin restricciones.",
     time: "6 - 18 meses",
   },
@@ -37,6 +41,7 @@ const treatments = [
     title: "Ortodoncia Interceptiva (Infantil)",
     desc: "Tratamiento preventivo para niños entre 6 y 11 años para guiar el crecimiento de los maxilares.",
     icon: "",
+    image: "/images/tratamientos/infantil.jpg",
     details: "Previene problemas graves en el futuro, creando espacio para los dientes permanentes.",
     time: "6 - 12 meses",
   },
@@ -44,6 +49,7 @@ const treatments = [
     title: "Retenedores y Post-Tratamiento",
     desc: "Fase crucial para mantener tu nueva sonrisa de por vida tras finalizar la ortodoncia.",
     icon: "",
+    image: "/images/tratamientos/retenedores.jpg",
     details: "Opciones de retenedores fijos (invisibles por detrás) o removibles transparentes.",
     time: "Uso continuo",
   },
@@ -51,6 +57,7 @@ const treatments = [
     title: "Diseño de Sonrisa Completo",
     desc: "Tratamiento integral combinando ortodoncia con blanqueamiento o carillas si es necesario.",
     icon: "",
+    image: "/images/tratamientos/diseno-sonrisa.jpg",
     details: "Para pacientes que buscan la perfección estética absoluta al finalizar la alineación.",
     time: "Variable",
   },
@@ -84,13 +91,19 @@ export default function TratamientosPage() {
                 onMouseLeave={() => setActiveTreatment(null)}
                 className="bg-light-gray rounded-2xl overflow-hidden cursor-default hover:shadow-soft transition-all group border border-transparent hover:border-gold/20 flex flex-col"
               >
-                {/* Image Placeholder */}
-                <div className="w-full h-48 bg-[#EAEAEA] flex items-center justify-center relative border-b border-white">
-                  <div className="absolute top-4 left-4 text-4xl">{t.icon}</div>
-                  <div className="text-center text-dark-gray/40">
-                    <div className="text-3xl mb-2">📸</div>
-                    <span className="text-body-sm font-medium">Imagen del Tratamiento</span>
-                  </div>
+                {/* Image Placeholder / Display */}
+                <div className="w-full h-48 bg-[#EAEAEA] flex items-center justify-center relative border-b border-white overflow-hidden">
+                  {t.image ? (
+                    <img src={t.image} alt={t.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <>
+                      <div className="absolute top-4 left-4 text-4xl">{t.icon}</div>
+                      <div className="text-center text-dark-gray/40">
+                        <div className="text-3xl mb-2">📸</div>
+                        <span className="text-body-sm font-medium">Sube imagen: {t.image?.split('/').pop()}</span>
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 <div className="p-8 flex-1 flex flex-col">

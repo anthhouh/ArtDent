@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { MessageCircle, Menu, X, Calendar } from "lucide-react";
 
 export default function Navbar() {
@@ -33,11 +34,11 @@ export default function Navbar() {
             : "bg-white border-b border-light-gray"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[1440px] w-full mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="text-2xl font-bold text-anthracite tracking-tight">
-              Art<span className="text-gold">Dent</span>
+            <Link href="/" className="flex items-center">
+              <Image src="/Logo.png" alt="ArtDent Logo" width={180} height={60} className="h-14 w-auto object-contain" priority />
             </Link>
 
             {/* Desktop Nav */}

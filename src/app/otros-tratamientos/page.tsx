@@ -9,6 +9,7 @@ const treatments = [
     title: "Limpieza Dental",
     desc: "Eliminación profesional del sarro y placa bacteriana que no se puede eliminar con el cepillado diario.",
     icon: "",
+    image: "/images/otros-tratamientos/limpieza.jpg",
     details: "Incluye pulido dental y aplicación de flúor. Recomendada cada 6 meses para mantener una salud bucal óptima.",
     time: "45 - 60 min",
   },
@@ -16,6 +17,7 @@ const treatments = [
     title: "Aclaramiento Dental",
     desc: "Tratamiento estético para blanquear y aclarar el tono natural de tus dientes de forma segura y efectiva.",
     icon: "",
+    image: "/images/otros-tratamientos/aclaramiento.jpg",
     details: "Disponible en modalidad en clínica (resultado inmediato) o con cubetas personalizadas para usar en casa.",
     time: "1 - 3 sesiones",
   },
@@ -23,6 +25,7 @@ const treatments = [
     title: "Rehabilitación Oral",
     desc: "Restauración completa de la función y estética de tu boca mediante una combinación de tratamientos integrales.",
     icon: "",
+    image: "/images/otros-tratamientos/rehabilitacion.jpg",
     details: "Incluye prótesis, implantes, carillas, coronas y cualquier tratamiento necesario para recuperar tu sonrisa completa.",
     time: "Variable",
   },
@@ -30,6 +33,7 @@ const treatments = [
     title: "Cirugía de Terceros Molares",
     desc: "Extracción profesional de las muelas del juicio impactadas o que no tienen espacio suficiente para erupcionar.",
     icon: "",
+    image: "/images/otros-tratamientos/cirugia.jpg",
     details: "Procedimiento realizado bajo anestesia local. Evita infecciones, dolor y daño a dientes adyacentes.",
     time: "30 - 60 min",
   },
@@ -37,6 +41,7 @@ const treatments = [
     title: "Endodoncia",
     desc: "Tratamiento para salvar dientes con infección o daño en la pulpa dental, eliminando el dolor de raíz.",
     icon: "",
+    image: "/images/otros-tratamientos/endodoncia.jpg",
     details: "Se elimina la pulpa dañada, se desinfecta el conducto y se sella herméticamente. Permite conservar el diente natural.",
     time: "1 - 2 sesiones",
   },
@@ -70,13 +75,19 @@ export default function OtrosTratamientosPage() {
                 onMouseLeave={() => setActiveTreatment(null)}
                 className="bg-light-gray rounded-2xl overflow-hidden cursor-default hover:shadow-soft transition-all group border border-transparent hover:border-gold/20 flex flex-col"
               >
-                {/* Image Placeholder */}
-                <div className="w-full h-48 bg-[#EAEAEA] flex items-center justify-center relative border-b border-white">
-                  <div className="absolute top-4 left-4 text-4xl">{t.icon}</div>
-                  <div className="text-center text-dark-gray/40">
-                    <div className="text-3xl mb-2">📸</div>
-                    <span className="text-body-sm font-medium">Imagen del Tratamiento</span>
-                  </div>
+                {/* Image Placeholder / Display */}
+                <div className="w-full h-48 bg-[#EAEAEA] flex items-center justify-center relative border-b border-white overflow-hidden">
+                  {t.image ? (
+                    <img src={t.image} alt={t.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <>
+                      <div className="absolute top-4 left-4 text-4xl">{t.icon}</div>
+                      <div className="text-center text-dark-gray/40">
+                        <div className="text-3xl mb-2">📸</div>
+                        <span className="text-body-sm font-medium">Sube imagen: {t.image?.split('/').pop()}</span>
+                      </div>
+                    </>
+                  )}
                 </div>
 
                 <div className="p-8 flex-1 flex flex-col">

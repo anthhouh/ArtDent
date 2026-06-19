@@ -33,8 +33,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "18 meses",
     problem: "Apiñamiento severo en dientes frontales",
     result: "Sonrisa perfectamente alineada y simétrica",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso1-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso1-despues.jpg",
   },
   {
     _id: "2",
@@ -43,8 +43,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "14 meses",
     problem: "Mordida cruzada posterior",
     result: "Mordida corregida, oclusión equilibrada",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso2-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso2-despues.jpg",
   },
   {
     _id: "3",
@@ -53,8 +53,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "12 meses",
     problem: "Dientes de leche mal posicionados",
     result: "Guía de crecimiento exitosa, dientes permanentes en posición ideal",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso3-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso3-despues.jpg",
   },
   {
     _id: "4",
@@ -63,8 +63,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "22 meses",
     problem: "Espaciado pronunciado y overjet",
     result: "Cierre de espacios completo y perfil corregido",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso4-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso4-despues.jpg",
   },
   {
     _id: "5",
@@ -73,8 +73,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "20 meses",
     problem: "Recidiva ortodóntica (tratamiento previo sin retenedor)",
     result: "Corrección completa y plan de retención permanente",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso5-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso5-despues.jpg",
   },
   {
     _id: "6",
@@ -83,8 +83,8 @@ const fallbackCases: SuccessCase[] = [
     duration: "16 meses",
     problem: "Caninos incluidos y apiñamiento",
     result: "Erupción guiada exitosa, arco dental completo",
-    beforeUrl: null,
-    afterUrl: null,
+    beforeUrl: "/images/casos-de-exito/caso6-antes.jpg",
+    afterUrl: "/images/casos-de-exito/caso6-despues.jpg",
   },
 ];
 

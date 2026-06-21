@@ -57,7 +57,7 @@ export default function Navbar() {
             {/* Desktop Actions */}
             <div className="hidden md:flex items-center gap-3">
               <a
-                href="https://wa.me/593992216477"
+                href="https://wa.me/593992216377"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 text-body-sm font-semibold text-[#25D366] border border-[#25D366] rounded-xl hover:bg-[#25D366] hover:text-white transition-all"
@@ -124,7 +124,7 @@ export default function Navbar() {
         
         <div className="mt-auto pt-8 flex flex-col gap-4">
           <a
-            href="https://wa.me/593992216477"
+            href="https://wa.me/593992216377"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex justify-center items-center gap-2 px-6 py-4 bg-[#25D366]/10 text-[#25D366] font-semibold rounded-xl hover:bg-[#25D366]/20 transition-all"

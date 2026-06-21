@@ -54,7 +54,7 @@ export default function ContactoPage() {
                   { icon: <GmailIcon />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=artdentodontologia.08@gmail.com" },
                 ],
               },
-              { icon: <MessageCircle className="w-10 h-10 text-gold" />, title: "WhatsApp", info: "+593 992 216 477" },
+              { icon: <MessageCircle className="w-10 h-10 text-gold" />, title: "WhatsApp", info: "+593 992 216 377" },
               { 
                 icon: <MapPin className="w-10 h-10 text-gold" />, 
                 title: "Dirección", 
@@ -123,7 +123,7 @@ export default function ContactoPage() {
                 const waMsg = encodeURIComponent(
                   `Hola, soy ${name}. Me interesa información sobre: ${treatment}. ${message}`
                 );
-                window.open(`https://wa.me/593992216477?text=${waMsg}`, "_blank");
+                window.open(`https://wa.me/593992216377?text=${waMsg}`, "_blank");
               }}
               className="space-y-6"
             >

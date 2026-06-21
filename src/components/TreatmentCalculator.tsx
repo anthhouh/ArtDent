@@ -244,7 +244,7 @@ export default function TreatmentCalculator() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href={`https://wa.me/593992216477?text=${encodeURIComponent(`Hola, la calculadora me recomendó ${recommendation.title}. Me gustaría saber más y agendar una consulta.`)}`}
+                    href={`https://wa.me/593992216377?text=${encodeURIComponent(`Hola, la calculadora me recomendó ${recommendation.title}. Me gustaría saber más y agendar una consulta.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-8 py-4 bg-gold text-white font-semibold rounded-xl hover:bg-gold/90 transition-all shadow-soft inline-flex items-center gap-2 justify-center"

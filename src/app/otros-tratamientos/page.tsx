@@ -122,7 +122,7 @@ export default function OtrosTratamientosPage() {
                           Duración estimada: {t.time}
                         </div>
                         <a
-                          href="https://wa.me/593992216477"
+                          href="https://wa.me/593992216377"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-full inline-flex justify-center items-center gap-2 text-sm font-semibold text-white bg-gold px-4 py-3 rounded-xl hover:bg-gold/90 transition-colors"

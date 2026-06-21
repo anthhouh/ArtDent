@@ -51,15 +51,15 @@ export default function Home() {
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-border grid grid-cols-3 gap-4">
               <div>
-                <p className="text-heading-sm font-bold text-anthracite">+15</p>
-                <p className="text-xs text-dark-gray uppercase font-semibold">Años de Exp.</p>
+                <p className="text-heading-sm font-bold text-anthracite">Indicador</p>
+                <p className="text-xs text-dark-gray uppercase font-semibold">Hola</p>
               </div>
               <div>
-                <p className="text-heading-sm font-bold text-anthracite">5k+</p>
-                <p className="text-xs text-dark-gray uppercase font-semibold">Sonrisas Felices</p>
+                <p className="text-heading-sm font-bold text-anthracite">Indicador</p>
+                <p className="text-xs text-dark-gray uppercase font-semibold">Hola</p>
               </div>
               <div>
-                <p className="text-heading-sm font-bold text-anthracite">Top</p>
+                <p className="text-heading-sm font-bold text-anthracite">Indicador</p>
                 <p className="text-xs text-dark-gray uppercase font-semibold">Hola</p>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Home() {
               { title: "Nuestra Experiencia", desc: "Conoce a la Doctora", link: "/doctora", icon: "👩‍⚕️" },
               { title: "Soluciones", desc: "Ver Tratamientos", link: "/tratamientos", icon: "🦷" },
               { title: "Resultados Reales", desc: "Casos de Éxito", link: "/casos-de-exito", icon: "✨" },
-              { title: "Reseñas", desc: "Leer Testimonios", link: "/testimonios", icon: "⭐" },
+              { title: "Apartado extra", desc: "Por definir", link: "/pordefinir", icon: "⭐" },
             ].map((item, idx) => (
               <Link href={item.link} key={idx} className="bg-white p-8 rounded-2xl shadow-subtle hover:shadow-soft transition-all group block text-center border border-transparent hover:border-gold/20">
                 <div className="text-4xl mb-4">{item.icon}</div>

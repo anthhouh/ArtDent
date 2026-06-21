@@ -54,7 +54,7 @@ export default function ContactoPage() {
                   { icon: <GmailIcon />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=artdentodontologia.08@gmail.com" },
                 ],
               },
-              { icon: <MessageCircle className="w-10 h-10 text-gold" />, title: "WhatsApp", info: "+593 992 216 377" },
+              { icon: <MessageCircle className="w-10 h-10 text-gold" />, title: "WhatsApp", info: "+593 992 216 477" },
               { 
                 icon: <MapPin className="w-10 h-10 text-gold" />, 
                 title: "Dirección", 
@@ -118,17 +118,15 @@ export default function ContactoPage() {
                 e.preventDefault();
                 const data = new FormData(e.currentTarget);
                 const name = data.get("nombre");
-                const phone = data.get("telefono");
                 const treatment = data.get("tratamiento");
                 const message = data.get("mensaje");
                 const waMsg = encodeURIComponent(
-                  `Hola, soy ${name}. Mi teléfono es ${phone}. Me interesa información sobre: ${treatment}. ${message}`
+                  `Hola, soy ${name}. Me interesa información sobre: ${treatment}. ${message}`
                 );
-                window.open(`https://wa.me/1234567890?text=${waMsg}`, "_blank");
+                window.open(`https://wa.me/593992216477?text=${waMsg}`, "_blank");
               }}
               className="space-y-6"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-body-sm font-semibold text-anthracite mb-2">
                     Nombre completo *
@@ -139,31 +137,6 @@ export default function ContactoPage() {
                     type="text"
                     className="w-full px-4 py-3 bg-white border border-border rounded-xl text-body-md focus:outline-none focus:ring-2 focus:ring-gold/40 transition"
                     placeholder="Tu nombre"
-                  />
-                </div>
-                <div>
-                  <label className="block text-body-sm font-semibold text-anthracite mb-2">
-                    Teléfono (WhatsApp) *
-                  </label>
-                  <input
-                    name="telefono"
-                    required
-                    type="tel"
-                    className="w-full px-4 py-3 bg-white border border-border rounded-xl text-body-md focus:outline-none focus:ring-2 focus:ring-gold/40 transition"
-                    placeholder="Ej. +593 55 1234 5678"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-body-sm font-semibold text-anthracite mb-2">
-                    Correo electrónico
-                  </label>
-                  <input
-                    name="email"
-                    type="email"
-                    className="w-full px-4 py-3 bg-white border border-border rounded-xl text-body-md focus:outline-none focus:ring-2 focus:ring-gold/40 transition"
-                    placeholder="correo@ejemplo.com"
                   />
                 </div>
                 <div>
@@ -189,7 +162,6 @@ export default function ContactoPage() {
                     <option value="No lo sé aún, necesito orientación">No lo sé aún, necesito orientación</option>
                   </select>
                 </div>
-              </div>
               <div>
                 <label className="block text-body-sm font-semibold text-anthracite mb-2">
                   Mensaje / Motivo de consulta

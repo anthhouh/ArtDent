@@ -282,7 +282,7 @@ export default function CasesGallery({ cases }: GalleryProps) {
             {/* CTA */}
             <div className="px-6 pb-6 md:px-8 md:pb-8">
               <a
-                href={`https://wa.me/1234567890?text=${encodeURIComponent(`Hola, vi el caso de ${current.treatment} y me gustaría agendar una consulta.`)}`}
+                href={`https://wa.me/593992216477?text=${encodeURIComponent(`Hola, vi el caso de ${current.treatment} y me gustaría agendar una consulta.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#FFFFFF" }}
